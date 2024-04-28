@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  background-color: rgba($color: $black-color, $alpha: 0.6);
+  color: $white-color;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+img {
+  width: 150px;
+  display: block;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+img {
+  width: 150px;
+  display: block;
+}

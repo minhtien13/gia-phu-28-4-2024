@@ -1,0 +1,307 @@
+.product {
+  &__heading {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $black-color;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+
+    span {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 10px;
+      text-transform: capitalize;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 3px;
+        background-color: $black-color;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+  }
+  &__wrapper {
+    position: relative;
+    padding: 0 0 12px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 2px 2px 0 0;
+    transition: all linear 0.5s;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    &__logo {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 100px;
+      height: 50px;
+      z-index: 20;
+      display: none;
+      border-radius: 3px;
+    }
+
+    &__ima:hover &__logo {
+      display: block;
+    }
+
+    &__price {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      background-color: rgba($color: $black-color, $alpha: 0.7);
+      color: $white-color;
+      min-height: 20px;
+      padding: 6px 0;
+      font-weight: 600;
+      justify-content: center;
+      align-items: center;
+      display: none;
+
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: red;
+        font-weight: 600;
+      }
+    }
+    &__ima:hover &__price {
+      display: flex;
+    }
+    &__ima {
+      position: relative;
+      margin-bottom: 3px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    &__image {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      transition: all linear 0.5s;
+      border-radius: 2px 2px 0 0;
+    }
+    &__ima:hover &__image {
+      transform: scale(1.05);
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 0 5px;
+
+      &-phone {
+        margin-top: 12px;
+        font-weight: 600;
+        color: red;
+        font-family: Arial;
+
+        &:hover {
+          transform: scaleY(1.1);
+        }
+      }
+
+      &-title {
+        $fontSize: 1.1rem;
+        text-decoration: none;
+        color: $black-color;
+        font-size: $fontSize;
+        font-weight: 500;
+        line-height: calc($fontSize + 0.1rem);
+        margin: 6px 0;
+        max-height: calc($fontSize * 2);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        width: fit-content;
+        transition: all linear 0.2s;
+
+        &:hover {
+          color: $txt-f1-color;
+        }
+      }
+
+      &-desc {
+        color: #857e7e;
+        line-height: 1.4rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+      &-btn {
+        margin-top: 20px;
+        background-color: $primay-color;
+        color: $white-color;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 10px 8px;
+
+        i {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    &__content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+  }
+
+  &__service {
+    margin-top: 30px;
+    display: flex;
+    border-top: 1px solid $black-color;
+    border-top-right-radius: 15px;
+
+    &__wrapper {
+      &:first-child {
+        width: 250px;
+      }
+      &:last-child {
+        flex: 1;
+      }
+    }
+
+    &__silder {
+      position: relative;
+      min-height: 50%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-right: 1px solid rgba($color: $black-color, $alpha: 0.3);
+        z-index: 0;
+      }
+
+      &__heading {
+        background-color: $black-color;
+        color: $white-color;
+        padding: 10px 0 10px 8px;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &-item {
+          display: block;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-bottom: 1px solid rgba($color: $black-color, $alpha: 0.3);
+            z-index: 0;
+          }
+        }
+
+        &-link {
+          display: block;
+          padding: 7px 6px 10px 7px;
+          text-decoration: none;
+          font-size: 1.2rem;
+          color: $black-color;
+        }
+      }
+    }
+
+    &__main {
+      padding: 20px 20px 15px;
+
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+
+        .product__wrapper__ima {
+          overflow: hidden;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: yellow;
+          }
+        }
+      }
+    }
+  }
+
+  &__page {
+    margin-top: 30px;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      li.product__page--active {
+        background-color: $black-color;
+
+        a {
+          color: $white-color;
+        }
+      }
+
+      li {
+        padding: 8px 14px;
+        background-color: #f3f3f3;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $black-color;
+
+          a {
+            color: $white-color;
+          }
+        }
+        a {
+          color: $black-color;
+          text-transform: none;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

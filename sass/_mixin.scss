@@ -1,0 +1,10 @@
+@mixin faceRun($leftFirst: 0, $leftLast: 0) {
+  @keyframes faceRunPastBoys {
+    from {
+      left: $leftFirst;
+    }
+    to {
+      left: $leftLast;
+    }
+  }
+}

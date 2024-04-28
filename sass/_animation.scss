@@ -1,0 +1,108 @@
+// animation - menu
+@keyframes faceInMenu {
+  from {
+    top: calc(100% + 32px);
+    opacity: 0;
+  }
+  to {
+    top: calc(100% + 18px);
+    opacity: 1;
+  }
+}
+
+// animation
+@keyframes faceRunPastBoys {
+  from {
+    left: 300px;
+  }
+  to {
+    left: -590px;
+  }
+}
+@keyframes faceRunPastBoysMobile {
+  from {
+    left: 400px;
+  }
+  to {
+    left: -1250px;
+  }
+}
+
+@keyframes faceZoomText {
+  from {
+    color: $white-color;
+  }
+  to {
+    color: red;
+  }
+}
+
+@keyframes facePhone {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes faceDownHeader {
+  from {
+    top: -170px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes faceDownsearch {
+  from {
+    top: -140px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes mobileFaceDownHeader {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes faceMenuMobile {
+  from {
+    left: -320px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes faceInBackTop {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 120px;
+    opacity: 1;
+  }
+}
+
+// redponvesi
+@media screen and (max-width: 767.98px) {
+  @keyframes faceInBackTop {
+    from {
+      bottom: -50px;
+      opacity: 0;
+    }
+    to {
+      bottom: 60px;
+      opacity: 1;
+    }
+  }
+}

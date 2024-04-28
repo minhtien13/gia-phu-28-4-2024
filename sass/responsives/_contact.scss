@@ -1,0 +1,40 @@
+@media screen and (max-width: 767.98px) {
+  .contact {
+    &__main {
+      flex-direction: column-reverse;
+      width: 100%;
+
+      &__wrapper {
+        flex: 1;
+        width: 100%;
+
+        &:last-child {
+          margin-top: 16px;
+          border-left: none;
+        }
+      }
+
+      &__info ul li {
+        margin-top: 6px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__heading {
+      font-size: 1.6rem;
+      height: 40px;
+
+      &::after {
+        bottom: -125px;
+        z-index: -1;
+      }
+    }
+    &__head {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}

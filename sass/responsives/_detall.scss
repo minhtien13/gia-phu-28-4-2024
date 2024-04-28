@@ -1,0 +1,52 @@
+//
+@media screen and (max-width: 767.98px) {
+  .detall {
+    &__container {
+      flex-direction: column;
+
+      &__wrapper {
+        width: 100%;
+        margin-top: 12px;
+
+        &:first-child {
+          margin-top: 0;
+          padding-bottom: 12px;
+          border-bottom: 2px solid rgba($color: $black-color, $alpha: 0.6);
+        }
+      }
+    }
+
+    &__ima {
+      margin-top: 16px;
+      width: 100%;
+      height: 430px;
+    }
+    &__left {
+      &__main {
+        width: 100%;
+      }
+      ul {
+        li {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    &__info {
+      &--title {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+
+        &__rp {
+          &--2 {
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            min-height: 32px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
