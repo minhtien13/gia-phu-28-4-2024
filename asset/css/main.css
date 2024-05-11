@@ -1287,6 +1287,9 @@ html {
     width: 102px;
     height: 45px;
   }
+  .header__bar__container {
+    height: 55px;
+  }
   .banner__main {
     height: 130px;
   }
