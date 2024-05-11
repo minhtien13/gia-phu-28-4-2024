@@ -752,37 +752,25 @@ html {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.header__bar__mobile {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  height: 20px;
+.header__bar__mobile__contact {
+  padding: 0 20px;
 }
-.header__bar__mobile h3 {
-  margin-right: 10px;
-  text-wrap: nowrap;
+.header__bar__mobile__contact ul {
+  display: flex;
+  flex-direction: column;
+}
+.header__bar__mobile__contact ul li {
+  display: flex;
+  align-items: center;
+}
+.header__bar__mobile__contact ul li:last-child {
+  margin-top: 12px;
+}
+.header__bar__mobile__contact ul li span {
   font-size: 1.2rem;
 }
-.header__bar__mobile__warpper {
-  display: flex;
-  width: 500px;
-  animation: faceRunPastBoysMobile linear 30s infinite;
-  position: absolute;
-  left: 9px;
-  top: 0;
-  z-index: 10;
-  font-size: 1.2rem;
-}
-.header__bar__mobile__warpper ul {
-  display: flex;
-  gap: 15px;
-}
-.header__bar__mobile__warpper ul li {
-  text-wrap: nowrap;
-}
-.header__bar__mobile__warpper ul li span {
-  display: inline-block;
-  margin-right: 4px;
+.header__bar__mobile__contact ul li span:first-child {
+  margin-right: 8px;
 }
 
 .banner__main {
@@ -1288,7 +1276,7 @@ html {
     height: 45px;
   }
   .header__bar__container {
-    height: 80px;
+    min-height: 50px;
   }
   .header__bar__mobile__warpper ul li {
     display: flex;
