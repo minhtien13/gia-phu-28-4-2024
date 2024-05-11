@@ -1288,7 +1288,14 @@ html {
     height: 45px;
   }
   .header__bar__container {
-    height: 55px;
+    height: 80px;
+  }
+  .header__bar__mobile__warpper ul li {
+    display: flex;
+    align-items: end;
+  }
+  .header__bar__mobile__warpper ul li span:first-child {
+    margin-right: 6px;
   }
   .banner__main {
     height: 130px;

@@ -18,8 +18,21 @@
       }
     }
 
-    &__bar__container {
-      height: 55px;
+    &__bar {
+      &__container {
+        height: 80px;
+      }
+      &__mobile__warpper {
+        ul {
+          li {
+            display: flex;
+            align-items: end;
+            span:first-child {
+              margin-right: 6px;
+            }
+          }
+        }
+      }
     }
   }
   .banner {
