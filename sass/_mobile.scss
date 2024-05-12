@@ -115,6 +115,10 @@
 
         &:first-child {
           margin-right: 8px;
+
+          a {
+            color: $white-color;
+          }
         }
       }
     }
