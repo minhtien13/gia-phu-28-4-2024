@@ -670,6 +670,11 @@ html {
   display: flex;
   gap: 10px;
 }
+.footer__contact__list-item a {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #fff;
+}
 
 .mobile__menu {
   position: fixed;
@@ -777,7 +782,8 @@ html {
 .header__bar__mobile__contact ul li span:first-child {
   margin-right: 8px;
 }
-.header__bar__mobile__contact ul li span:first-child a {
+.header__bar__mobile__contact ul li a {
+  font-size: 1.2rem;
   color: #fff;
 }
 

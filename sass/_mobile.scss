@@ -115,11 +115,11 @@
 
         &:first-child {
           margin-right: 8px;
-
-          a {
-            color: $white-color;
-          }
         }
+      }
+      a {
+        font-size: 1.2rem;
+        color: $white-color;
       }
     }
   }
