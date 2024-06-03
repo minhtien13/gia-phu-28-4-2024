@@ -34,6 +34,9 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+  .container.container-full {
+    padding: 0;
+  }
 
   .p-x-0 {
     padding-left: 0;

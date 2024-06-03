@@ -26,6 +26,10 @@
     display: flex;
     gap: 30px;
     justify-content: space-between;
+
+    &-item {
+      background-color: $white-color;
+    }
   }
 
   &__container {
