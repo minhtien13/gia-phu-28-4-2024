@@ -1327,6 +1327,141 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.blog {
+  padding: 6rem 3rem 0;
+}
+.blog__list {
+  display: flex;
+  flex-direction: column;
+}
+.blog__list-item {
+  margin-top: 80px;
+  display: flex;
+  width: 80%;
+}
+.blog__list-item:first-child {
+  margin-top: 0;
+}
+.blog__list-item:nth-of-type(even) {
+  margin-left: auto;
+}
+.blog__list-item:nth-of-type(even) .blog__wrapper {
+  flex-direction: row-reverse;
+}
+.blog__list-item:nth-of-type(even) .blog__info {
+  padding-right: 15px;
+}
+.blog__list-item:nth-of-type(even) .blog__info-heading {
+  text-align: right;
+}
+.blog__list-item:nth-of-type(even) .blog__info-content {
+  text-align: right;
+}
+.blog__wrapper {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 17px 1px;
+  border-radius: 20px;
+}
+.blog__image {
+  width: 50%;
+  border-radius: 20px;
+}
+.blog__image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.blog__info {
+  width: 50%;
+  padding-left: 15px;
+}
+.blog__info-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.blog__info-content {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #727272;
+  font-weight: 500;
+}
+.blog__contact {
+  padding: 8px;
+  margin: 6rem auto 3rem;
+  width: 100%;
+  min-height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 17px 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog__contact__logo {
+  width: 50%;
+  border-radius: 20px;
+}
+.blog__contact__logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.blog__contact__info {
+  width: 50%;
+  padding-left: 15px;
+}
+.blog__contact__info ul {
+  padding-top: 10px;
+}
+.blog__contact__info ul li {
+  margin-top: 12px;
+}
+.blog__contact__info ul li:first-child {
+  margin-top: 0;
+}
+.blog__contact__info ul li a,
+.blog__contact__info ul li span {
+  display: flex;
+  font-size: 1.2rem;
+  color: #464343;
+  font-weight: 500;
+}
+.blog__contact__info ul li a i,
+.blog__contact__info ul li span i {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.3rem;
+  color: #333;
+}
+.blog__contact__info-description {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 500;
+}
+.blog__contact__info__soclai ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+.blog__contact__info__soclai ul li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 100rem;
+}
+.blog__contact__info__soclai ul li a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 767.98px) {
   .app {
     width: 100%;
@@ -1517,6 +1652,68 @@ html {
     -webkit-line-clamp: 2;
     min-height: 32px;
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .blog {
+    padding: 3rem 0 1.5rem;
+  }
+  .blog__list-item {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .blog__list-item:nth-of-type(even) {
+    margin-left: auto;
+  }
+  .blog__list-item:nth-of-type(even) .blog__wrapper {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .blog__list-item:nth-of-type(even) .blog__info {
+    padding-top: 15px;
+  }
+  .blog__list-item:nth-of-type(even) .blog__info-heading {
+    text-align: left;
+  }
+  .blog__list-item:nth-of-type(even) .blog__info-content {
+    text-align: left;
+  }
+  .blog__wrapper {
+    padding: 5px 5px 8px;
+    flex-direction: column;
+  }
+  .blog__info, .blog__image {
+    width: 100%;
+  }
+  .blog__info {
+    padding-top: 15px;
+  }
+  .blog__info-heading {
+    font-size: 1.3rem;
+  }
+  .blog__contact {
+    width: 100%;
+    padding: 6px;
+  }
+  .blog__contact__logo {
+    width: 100%;
+  }
+  .blog__contact__info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .blog__contact__info-description {
+    margin: 1rem 0;
+  }
+  .blog__contact__info__soclai {
+    padding-bottom: 12px;
+  }
+  .blog__contact__info__soclai ul li {
+    margin-right: 5px;
+  }
+  .blog__contact__info__soclai ul li a {
+    width: 40px;
+    height: 40px;
   }
 }
 @keyframes faceInMenu {

@@ -1,0 +1,161 @@
+.blog {
+  padding: 6rem 3rem 0;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      margin-top: 80px;
+      display: flex;
+      width: 80%;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:nth-of-type(even) {
+        margin-left: auto;
+
+        .blog__wrapper {
+          flex-direction: row-reverse;
+        }
+
+        .blog__info {
+          padding-right: 15px;
+
+          &-heading {
+            text-align: right;
+          }
+
+          &-content {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 17px 1px;
+    border-radius: 20px;
+  }
+
+  &__image {
+    width: 50%;
+    border-radius: 20px;
+
+    img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  &__info {
+    width: 50%;
+    padding-left: 15px;
+
+    &-heading {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    &-content {
+      display: block;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      color: #727272;
+      font-weight: 500;
+    }
+  }
+
+  &__contact {
+    padding: 8px;
+    margin: 6rem auto 3rem;
+    width: 100%;
+    min-height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 17px 1px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__logo {
+      width: 50%;
+      border-radius: 20px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+    &__info {
+      width: 50%;
+      padding-left: 15px;
+
+      ul {
+        padding-top: 10px;
+
+        li {
+          margin-top: 12px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          a,
+          span {
+            display: flex;
+            font-size: 1.2rem;
+            color: #464343;
+            font-weight: 500;
+
+            i {
+              display: inline-block;
+              margin-right: 10px;
+              font-size: 1.3rem;
+              color: #333;
+            }
+          }
+        }
+      }
+
+      &-description {
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        color: $black-color;
+        font-weight: 500;
+      }
+
+      &__soclai {
+        ul {
+          li {
+            display: inline-block;
+            margin-right: 8px;
+
+            a {
+              text-decoration: none;
+              display: inline-block;
+              width: 45px;
+              height: 45px;
+              overflow: hidden;
+              border-radius: 100rem;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
